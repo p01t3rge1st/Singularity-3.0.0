@@ -16,6 +16,7 @@ int main() {
 )" << '\n';
 
     std::cout << "Version 3.0.0 Raspberry Pi Main Control Unit" << std::endl;
+    std::cout << '\n';
 
     AirnElectro airnelectro;
     PSU psu;
@@ -23,7 +24,7 @@ int main() {
 
     airnelectro.start();
     psu.powerOn();
-    gui.run();
+    gui.run(); // ale będzie jebania się nie mogę się kurwa doczekac
 
 
     return 0;
